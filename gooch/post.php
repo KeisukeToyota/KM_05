@@ -81,10 +81,10 @@ use Abraham\TwitterOAuth\TwitterOAuth;
         $consumer_key = "McAoCYwWenhseXhjV6VZTc1Lm";
         // Consumer secretの値 @@@@@@
         $consumer_secret = "JIW5iPZLoEhxgL9E8nFtliMA72JVCmatvAdWatWdi0LSD1k38m";
-        // Access Tokenの値 @@@@@@
-        $access_token = "4375980312-WsprOBscWLZB6bDEWdtKHEQnAcdgffgt4aHh3qE";
+        // 公式トークン
+        $access_token = "xxxxxxxxxxxxxxxxxxx";
         // Access Token Secretの値 @@@@@@
-        $access_token_secret = "OsMv02cXFaFaiwo33MnMCmHKeuWqZ0pfL8pfO5AftjtdO";
+        $access_token_secret = "xxxxxxxxxxxxxxx";
 
     // TwitterへRTする。 最新ツイートのみリツイート、リツイート済はエラーとなる。
      $connection = new TwitterOAuth($consumer_key,$consumer_secret,$access_token,$access_token_secret);
