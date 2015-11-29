@@ -1,6 +1,6 @@
 <?php
 
-     require_once '../tw/twitteroauth/autoload.php';
+     require_once 'tw/twitteroauth/autoload.php';
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
@@ -25,6 +25,7 @@ use Abraham\TwitterOAuth\TwitterOAuth;
             $mysqli->select_db( "gooch" );
 
                 $aaaaa = $mysqli->query( "insert into article ( title, description, locate, user_id ) values ('". $_POST['title'] ."','". $_POST['description']."','". $_POST['locate'] ."','". $_SESSION['USERID'] ."')" );
+            $mysqli->query( "insert into iine ( user, iine ) values ( '', 0 )" );
             
             if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
             
